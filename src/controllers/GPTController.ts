@@ -146,9 +146,9 @@ export default class GPTController {
                 return res.status(200).json({
                     status: 'success',
                     data: {
-                        // plain_data,
+                        plain_data,
                         variables,
-                        constraint
+                        'constraints': constraint
                     }
                 })
             }
